@@ -40,6 +40,10 @@ socketIO.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
 app.get("/api", (req, res) => {
   res.json({
     message: "Up & Running",

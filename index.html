@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/561/561226.png" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@600,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wtf is dtf?</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "General Sans", sans-serif;
+      }
+
+      nav > ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        list-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #272938;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: 80vh;
+      }
+
+      #dtf {
+        text-decoration: none;
+        border-bottom: 6px solid #25c2a0;
+      }
+
+      main h2 {
+        font-size: 6rem;
+        color: #000;
+      }
+
+      main > p {
+        font-size: 4rem;
+      }
+
+      main img {
+        height: 12rem;
+      }
+
+      @media (width < 768px) {
+        main {
+          flex-direction: column;
+        }
+
+        main > img {
+          height: 10rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="https://dtf-atharane.vercel.app/">Visit app</a></li>
+        <li><a href="https://www.atharane.biz/">About the developer</a></li>
+      </ul>
+    </nav>
+    <main>
+      <a id="dtf" href="https://dtf-atharane.vercel.app/"><h2>dtf?</h2></a>
+      <p>X</p>
+      <a href="https://socket.io/"
+        ><img src="https://socket.io/images/logo.svg" alt="socketio"
+      /></a>
+    </main>
+  </body>
+</html>
